@@ -73,6 +73,24 @@
     <Compile Include="Klient.Designer.cs">
       <DependentUpon>Klient.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListFurnitura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListFurnitura.Designer.cs">
+      <DependentUpon>ListFurnitura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListИзделий.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListИзделий.Designer.cs">
+      <DependentUpon>ListИзделий.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListТканей.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListТканей.Designer.cs">
+      <DependentUpon>ListТканей.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +131,15 @@
     <EmbeddedResource Include="Klient.resx">
       <DependentUpon>Klient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListFurnitura.resx">
+      <DependentUpon>ListFurnitura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListИзделий.resx">
+      <DependentUpon>ListИзделий.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListТканей.resx">
+      <DependentUpon>ListТканей.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manager.resx">
       <DependentUpon>Manager.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +159,9 @@
       <DependentUpon>Storekeeper.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Изделие.datasource" />
+    <None Include="Properties\DataSources\Ткань.datasource" />
+    <None Include="Properties\DataSources\Фурнитура.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
