@@ -12,6 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        public static int fa = 0;
         public static Form1 FORMA { get; set; }
         public static Пользователь USER { get; set; }
         Model1 db = new Model1();

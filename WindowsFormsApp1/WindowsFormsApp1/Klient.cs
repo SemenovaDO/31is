@@ -12,9 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class Klient : Form
     {
+        public static Klient kli;
         public Klient()
         {
             InitializeComponent();
+            kli = this;
         }
 
         private void Button1_Click(object sender, EventArgs e)

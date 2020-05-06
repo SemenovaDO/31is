@@ -12,15 +12,25 @@ namespace WindowsFormsApp1
 {
     public partial class Manager : Form
     {
+        public static Manager mng;
         public Manager()
         {
             InitializeComponent();
+            mng = this;
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             Form1.FORMA.Show();
             this.Close();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            ListИзделий list = new ListИзделий();
+            Form1.fa = 2;
+            list.Show();
+            this.Hide();
         }
     }
 }

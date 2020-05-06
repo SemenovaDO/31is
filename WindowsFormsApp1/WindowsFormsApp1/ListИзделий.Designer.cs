@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.изделиеBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ширинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,6 +38,7 @@
             this.изображениеDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.фурнитураИзделияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.тканьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.изделиеBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.изделиеBindingSource)).BeginInit();
@@ -70,10 +70,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(667, 150);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // изделиеBindingSource
-            // 
-            this.изделиеBindingSource.DataSource = typeof(WindowsFormsApp1.Изделие);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // артикулDataGridViewTextBoxColumn
             // 
@@ -131,6 +128,10 @@
             this.тканьDataGridViewTextBoxColumn.Name = "тканьDataGridViewTextBoxColumn";
             this.тканьDataGridViewTextBoxColumn.Width = 63;
             // 
+            // изделиеBindingSource
+            // 
+            this.изделиеBindingSource.DataSource = typeof(WindowsFormsApp1.Изделие);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(692, 282);
@@ -139,6 +140,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Выйти";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // ListИзделий
             // 
