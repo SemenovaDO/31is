@@ -31,15 +31,16 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.Изображение = new System.Windows.Forms.DataGridViewImageColumn();
             this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ширинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.длинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.изображениеDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.фурнитураИзделияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.тканьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.изделиеBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.изделиеBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -62,15 +63,51 @@
             this.наименованиеDataGridViewTextBoxColumn,
             this.ширинаDataGridViewTextBoxColumn,
             this.длинаDataGridViewTextBoxColumn,
-            this.изображениеDataGridViewImageColumn,
-            this.фурнитураИзделияDataGridViewTextBoxColumn,
-            this.тканьDataGridViewTextBoxColumn});
+            this.Изображение});
             this.dataGridView1.DataSource = this.изделиеBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(80, 83);
+            this.dataGridView1.Location = new System.Drawing.Point(80, 89);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(667, 150);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(684, 304);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Выйти";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(101, 257);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Добавить изделие";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(334, 257);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(130, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Изменить изделие";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // Изображение
+            // 
+            this.Изображение.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Изображение.DataPropertyName = "Изображение";
+            this.Изображение.HeaderText = "Изображение";
+            this.Изображение.Name = "Изображение";
+            this.Изображение.Width = 83;
             // 
             // артикулDataGridViewTextBoxColumn
             // 
@@ -104,54 +141,34 @@
             this.длинаDataGridViewTextBoxColumn.Name = "длинаDataGridViewTextBoxColumn";
             this.длинаDataGridViewTextBoxColumn.Width = 65;
             // 
-            // изображениеDataGridViewImageColumn
-            // 
-            this.изображениеDataGridViewImageColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.изображениеDataGridViewImageColumn.DataPropertyName = "Изображение";
-            this.изображениеDataGridViewImageColumn.HeaderText = "Изображение";
-            this.изображениеDataGridViewImageColumn.Name = "изображениеDataGridViewImageColumn";
-            this.изображениеDataGridViewImageColumn.Width = 83;
-            // 
-            // фурнитураИзделияDataGridViewTextBoxColumn
-            // 
-            this.фурнитураИзделияDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.фурнитураИзделияDataGridViewTextBoxColumn.DataPropertyName = "ФурнитураИзделия";
-            this.фурнитураИзделияDataGridViewTextBoxColumn.HeaderText = "ФурнитураИзделия";
-            this.фурнитураИзделияDataGridViewTextBoxColumn.Name = "фурнитураИзделияDataGridViewTextBoxColumn";
-            this.фурнитураИзделияDataGridViewTextBoxColumn.Width = 132;
-            // 
-            // тканьDataGridViewTextBoxColumn
-            // 
-            this.тканьDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.тканьDataGridViewTextBoxColumn.DataPropertyName = "Ткань";
-            this.тканьDataGridViewTextBoxColumn.HeaderText = "Ткань";
-            this.тканьDataGridViewTextBoxColumn.Name = "тканьDataGridViewTextBoxColumn";
-            this.тканьDataGridViewTextBoxColumn.Width = 63;
-            // 
             // изделиеBindingSource
             // 
             this.изделиеBindingSource.DataSource = typeof(WindowsFormsApp1.Изделие);
             // 
-            // button1
+            // button4
             // 
-            this.button1.Location = new System.Drawing.Point(692, 282);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Выйти";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.button4.Location = new System.Drawing.Point(592, 257);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(121, 23);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Удалить изделие";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // ListИзделий
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 339);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "ListИзделий";
             this.Text = "Список изделий";
+            this.Load += new System.EventHandler(this.ListИзделий_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.изделиеBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -163,14 +180,15 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource изделиеBindingSource;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn артикулDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn наименованиеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ширинаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn длинаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewImageColumn изображениеDataGridViewImageColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn фурнитураИзделияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn тканьDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource изделиеBindingSource;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewImageColumn Изображение;
+        private System.Windows.Forms.Button button4;
     }
 }

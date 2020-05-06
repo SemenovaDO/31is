@@ -55,6 +55,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddChangeListFurnitura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddChangeListFurnitura.Designer.cs">
+      <DependentUpon>AddChangeListFurnitura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddChangeListTkaney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddChangeListTkaney.Designer.cs">
+      <DependentUpon>AddChangeListTkaney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddChangeListИзделий.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddChangeListИзделий.Designer.cs">
+      <DependentUpon>AddChangeListИзделий.cs</DependentUpon>
+    </Compile>
     <Compile Include="Director.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +140,15 @@
     <Compile Include="Ткань.cs" />
     <Compile Include="Фурнитура.cs" />
     <Compile Include="ФурнитураИзделия.cs" />
+    <EmbeddedResource Include="AddChangeListFurnitura.resx">
+      <DependentUpon>AddChangeListFurnitura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddChangeListTkaney.resx">
+      <DependentUpon>AddChangeListTkaney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddChangeListИзделий.resx">
+      <DependentUpon>AddChangeListИзделий.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Director.resx">
       <DependentUpon>Director.cs</DependentUpon>
     </EmbeddedResource>
