@@ -79,5 +79,10 @@ namespace WindowsFormsApp1
             this.Close();
             Form1.FORMA.Show();
         }
+
+        private void SingUp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
