@@ -56,5 +56,10 @@ namespace WindowsFormsApp1
             }
             DialogResult = DialogResult.OK;
         }
+
+        private void артикулLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
