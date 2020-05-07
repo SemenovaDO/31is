@@ -56,7 +56,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(357, 23);
+            this.label1.Location = new System.Drawing.Point(358, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(223, 23);
             this.label1.TabIndex = 1;
