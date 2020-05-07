@@ -35,9 +35,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(609, 284);
+            this.button1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(613, 283);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(83, 26);
             this.button1.TabIndex = 0;
             this.button1.Text = "Sign out";
             this.button1.UseVisualStyleBackColor = true;
@@ -46,17 +47,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(275, 34);
+            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(265, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 13);
+            this.label1.Size = new System.Drawing.Size(205, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Экран Директора";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(197, 76);
+            this.button2.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(240, 118);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(266, 23);
+            this.button2.Size = new System.Drawing.Size(266, 27);
             this.button2.TabIndex = 2;
             this.button2.Text = "Список изделий";
             this.button2.UseVisualStyleBackColor = true;
@@ -66,6 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Thistle;
             this.ClientSize = new System.Drawing.Size(724, 330);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
