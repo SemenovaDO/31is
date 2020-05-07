@@ -34,12 +34,15 @@ namespace WindowsFormsApp1
             else if (textBox2.Text != textBox3.Text)
             {
                 MessageBox.Show("Значения паролей не совпадают!");
+                textBox2.Text = "";
+                textBox3.Text = "";
                 return;
             }
             else if ((textBox4.Text != "Директор") && (textBox4.Text != "Менеджер")
             && (textBox4.Text != "Заказчик") && (textBox4.Text != "Кладовщик"))
             {
                 MessageBox.Show("Задана неверная роль!");
+                textBox4.Text = "";
                 return;
             }
             // ищем запись пользователя с введенным логином
@@ -47,6 +50,7 @@ namespace WindowsFormsApp1
             if (usr != null)
             {
                 MessageBox.Show("Пользователь с таким логином уже есть!");
+                textBox1.Text = "";
                 return;
             }
             else
@@ -70,6 +74,10 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Пользователь " + usr.Логин + " зарегистрирован!");
                 Form1.FORMA.Show();
                 this.Close();
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
                 return;
             }
         }
@@ -77,7 +85,16 @@ namespace WindowsFormsApp1
         private void Button2_Click(object sender, EventArgs e)
         {
             this.Close();
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
             Form1.FORMA.Show();
+        }
+
+        private void SingUp_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

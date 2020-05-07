@@ -32,6 +32,8 @@ namespace WindowsFormsApp1
             FORMA = this;
             this.Hide();
             sup.Show();
+            textBox1.Text = "";
+            textBox2.Text = "";
         }
 
         private void Button1_Click(object sender, EventArgs e)//sign in - войти
@@ -76,11 +78,15 @@ namespace WindowsFormsApp1
                     MessageBox.Show($"Роли {usr.Роль} в системе нет!");
                     return;
                 }
+                textBox1.Text = "";
+                textBox2.Text = "";
             }
             else
             {
                 // если данные введены не правильно, то показываем сообщение
                 MessageBox.Show("Пользователя с таким логином и паролем нет!");
+                textBox1.Text = "";
+                textBox2.Text = "";
                 return;
             }
         }
