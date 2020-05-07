@@ -36,7 +36,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(649, 293);
+            this.button1.Location = new System.Drawing.Point(663, 308);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(90, 27);
             this.button1.TabIndex = 0;
