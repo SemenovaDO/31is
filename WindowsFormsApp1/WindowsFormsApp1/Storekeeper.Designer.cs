@@ -75,7 +75,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(241, 29);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Спикой фурнитуры";
+            this.button3.Text = "Список фурнитуры";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
