@@ -35,9 +35,9 @@ namespace WindowsFormsApp1
 
         private void Button3_Click(object sender, EventArgs e)//list furnitura
         {
-            ListFurnitura furnitura = new ListFurnitura();
+            СписокФурнитуры список = new СписокФурнитуры();
             Form1.fa = 3;
-            furnitura.Show();
+            список.Show();
             this.Hide();
         }
     }

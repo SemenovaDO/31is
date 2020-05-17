@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class AddChangeListFurnitura
+    partial class ДобИзмФурнитуры
     {
         /// <summary>
         /// Required designer variable.
@@ -36,10 +36,10 @@
             System.Windows.Forms.Label типLabel;
             System.Windows.Forms.Label ценаLabel;
             System.Windows.Forms.Label ширинаLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddChangeListFurnitura));
-            this.фурнитураBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ДобИзмФурнитуры));
             this.фурнитураBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.фурнитураBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -67,16 +67,16 @@
             типLabel = new System.Windows.Forms.Label();
             ценаLabel = new System.Windows.Forms.Label();
             ширинаLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingNavigator)).BeginInit();
             this.фурнитураBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // артикулLabel
             // 
             артикулLabel.AutoSize = true;
-            артикулLabel.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            артикулLabel.Location = new System.Drawing.Point(99, 49);
+            артикулLabel.Location = new System.Drawing.Point(94, 51);
+            артикулLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             артикулLabel.Name = "артикулLabel";
             артикулLabel.Size = new System.Drawing.Size(88, 18);
             артикулLabel.TabIndex = 1;
@@ -85,8 +85,8 @@
             // весLabel
             // 
             весLabel.AutoSize = true;
-            весLabel.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            весLabel.Location = new System.Drawing.Point(99, 161);
+            весLabel.Location = new System.Drawing.Point(94, 87);
+            весLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             весLabel.Name = "весLabel";
             весLabel.Size = new System.Drawing.Size(42, 18);
             весLabel.TabIndex = 3;
@@ -95,8 +95,8 @@
             // длинаLabel
             // 
             длинаLabel.AutoSize = true;
-            длинаLabel.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            длинаLabel.Location = new System.Drawing.Point(99, 106);
+            длинаLabel.Location = new System.Drawing.Point(94, 123);
+            длинаLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             длинаLabel.Name = "длинаLabel";
             длинаLabel.Size = new System.Drawing.Size(66, 18);
             длинаLabel.TabIndex = 5;
@@ -105,8 +105,8 @@
             // наименованиеLabel
             // 
             наименованиеLabel.AutoSize = true;
-            наименованиеLabel.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            наименованиеLabel.Location = new System.Drawing.Point(99, 78);
+            наименованиеLabel.Location = new System.Drawing.Point(94, 159);
+            наименованиеLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             наименованиеLabel.Name = "наименованиеLabel";
             наименованиеLabel.Size = new System.Drawing.Size(136, 18);
             наименованиеLabel.TabIndex = 7;
@@ -115,8 +115,8 @@
             // типLabel
             // 
             типLabel.AutoSize = true;
-            типLabel.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            типLabel.Location = new System.Drawing.Point(99, 189);
+            типLabel.Location = new System.Drawing.Point(94, 195);
+            типLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             типLabel.Name = "типLabel";
             типLabel.Size = new System.Drawing.Size(43, 18);
             типLabel.TabIndex = 9;
@@ -125,8 +125,8 @@
             // ценаLabel
             // 
             ценаLabel.AutoSize = true;
-            ценаLabel.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            ценаLabel.Location = new System.Drawing.Point(99, 217);
+            ценаLabel.Location = new System.Drawing.Point(94, 231);
+            ценаLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             ценаLabel.Name = "ценаLabel";
             ценаLabel.Size = new System.Drawing.Size(56, 18);
             ценаLabel.TabIndex = 11;
@@ -135,8 +135,8 @@
             // ширинаLabel
             // 
             ширинаLabel.AutoSize = true;
-            ширинаLabel.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            ширинаLabel.Location = new System.Drawing.Point(99, 133);
+            ширинаLabel.Location = new System.Drawing.Point(94, 267);
+            ширинаLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             ширинаLabel.Name = "ширинаLabel";
             ширинаLabel.Size = new System.Drawing.Size(81, 18);
             ширинаLabel.TabIndex = 13;
@@ -167,8 +167,9 @@
             this.фурнитураBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.фурнитураBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.фурнитураBindingNavigator.Name = "фурнитураBindingNavigator";
+            this.фурнитураBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.фурнитураBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.фурнитураBindingNavigator.Size = new System.Drawing.Size(475, 25);
+            this.фурнитураBindingNavigator.Size = new System.Drawing.Size(669, 25);
             this.фурнитураBindingNavigator.TabIndex = 0;
             this.фурнитураBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -180,6 +181,10 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // фурнитураBindingSource
+            // 
+            this.фурнитураBindingSource.DataSource = typeof(WindowsFormsApp1.Фурнитура);
             // 
             // bindingNavigatorCountItem
             // 
@@ -224,7 +229,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -270,65 +274,72 @@
             // артикулTextBox
             // 
             this.артикулTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.фурнитураBindingSource, "Артикул", true));
-            this.артикулTextBox.Location = new System.Drawing.Point(253, 49);
+            this.артикулTextBox.Location = new System.Drawing.Point(248, 47);
+            this.артикулTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.артикулTextBox.Name = "артикулTextBox";
-            this.артикулTextBox.Size = new System.Drawing.Size(100, 20);
+            this.артикулTextBox.Size = new System.Drawing.Size(287, 26);
             this.артикулTextBox.TabIndex = 2;
             // 
             // весTextBox
             // 
             this.весTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.фурнитураBindingSource, "Вес", true));
-            this.весTextBox.Location = new System.Drawing.Point(253, 161);
+            this.весTextBox.Location = new System.Drawing.Point(248, 83);
+            this.весTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.весTextBox.Name = "весTextBox";
-            this.весTextBox.Size = new System.Drawing.Size(100, 20);
+            this.весTextBox.Size = new System.Drawing.Size(287, 26);
             this.весTextBox.TabIndex = 4;
             // 
             // длинаTextBox
             // 
             this.длинаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.фурнитураBindingSource, "Длина", true));
-            this.длинаTextBox.Location = new System.Drawing.Point(253, 106);
+            this.длинаTextBox.Location = new System.Drawing.Point(248, 119);
+            this.длинаTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.длинаTextBox.Name = "длинаTextBox";
-            this.длинаTextBox.Size = new System.Drawing.Size(100, 20);
+            this.длинаTextBox.Size = new System.Drawing.Size(287, 26);
             this.длинаTextBox.TabIndex = 6;
             // 
             // наименованиеTextBox
             // 
             this.наименованиеTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.фурнитураBindingSource, "Наименование", true));
-            this.наименованиеTextBox.Location = new System.Drawing.Point(254, 78);
+            this.наименованиеTextBox.Location = new System.Drawing.Point(248, 155);
+            this.наименованиеTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.наименованиеTextBox.Name = "наименованиеTextBox";
-            this.наименованиеTextBox.Size = new System.Drawing.Size(100, 20);
+            this.наименованиеTextBox.Size = new System.Drawing.Size(287, 26);
             this.наименованиеTextBox.TabIndex = 8;
             // 
             // типTextBox
             // 
             this.типTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.фурнитураBindingSource, "Тип", true));
-            this.типTextBox.Location = new System.Drawing.Point(253, 189);
+            this.типTextBox.Location = new System.Drawing.Point(248, 191);
+            this.типTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.типTextBox.Name = "типTextBox";
-            this.типTextBox.Size = new System.Drawing.Size(100, 20);
+            this.типTextBox.Size = new System.Drawing.Size(287, 26);
             this.типTextBox.TabIndex = 10;
             // 
             // ценаTextBox
             // 
             this.ценаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.фурнитураBindingSource, "Цена", true));
-            this.ценаTextBox.Location = new System.Drawing.Point(253, 217);
+            this.ценаTextBox.Location = new System.Drawing.Point(248, 227);
+            this.ценаTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.ценаTextBox.Name = "ценаTextBox";
-            this.ценаTextBox.Size = new System.Drawing.Size(100, 20);
+            this.ценаTextBox.Size = new System.Drawing.Size(287, 26);
             this.ценаTextBox.TabIndex = 12;
             // 
             // ширинаTextBox
             // 
             this.ширинаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.фурнитураBindingSource, "Ширина", true));
-            this.ширинаTextBox.Location = new System.Drawing.Point(253, 133);
+            this.ширинаTextBox.Location = new System.Drawing.Point(248, 263);
+            this.ширинаTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.ширинаTextBox.Name = "ширинаTextBox";
-            this.ширинаTextBox.Size = new System.Drawing.Size(100, 20);
+            this.ширинаTextBox.Size = new System.Drawing.Size(287, 26);
             this.ширинаTextBox.TabIndex = 14;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(172, 265);
+            this.button1.Location = new System.Drawing.Point(75, 332);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 23);
+            this.button1.Size = new System.Drawing.Size(125, 32);
             this.button1.TabIndex = 15;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
@@ -336,21 +347,21 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(388, 322);
+            this.button2.Location = new System.Drawing.Point(451, 332);
+            this.button2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(125, 32);
             this.button2.TabIndex = 16;
             this.button2.Text = "Выйти";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // AddChangeListFurnitura
+            // ДобИзмФурнитуры
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(475, 357);
+            this.ClientSize = new System.Drawing.Size(669, 379);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(артикулLabel);
@@ -368,13 +379,15 @@
             this.Controls.Add(ширинаLabel);
             this.Controls.Add(this.ширинаTextBox);
             this.Controls.Add(this.фурнитураBindingNavigator);
-            this.Name = "AddChangeListFurnitura";
-            this.Text = "AddChangeListFurnitura";
-            this.Load += new System.EventHandler(this.AddChangeListFurnitura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource)).EndInit();
+            this.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Name = "ДобИзмФурнитуры";
+            this.Text = "ДобИзмФурнитуры";
+            this.Load += new System.EventHandler(this.ДобИзмФурнитуры_Load);
             ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingNavigator)).EndInit();
             this.фурнитураBindingNavigator.ResumeLayout(false);
             this.фурнитураBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.фурнитураBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

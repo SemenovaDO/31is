@@ -55,12 +55,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddChangeListFurnitura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddChangeListFurnitura.Designer.cs">
-      <DependentUpon>AddChangeListFurnitura.cs</DependentUpon>
-    </Compile>
     <Compile Include="AddChangeListTkaney.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,17 +79,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Klient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Klient.Designer.cs">
       <DependentUpon>Klient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ListFurnitura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListFurnitura.Designer.cs">
-      <DependentUpon>ListFurnitura.cs</DependentUpon>
     </Compile>
     <Compile Include="ListИзделий.cs">
       <SubType>Form</SubType>
@@ -131,18 +120,27 @@
       <DependentUpon>Storekeeper.cs</DependentUpon>
     </Compile>
     <Compile Include="sysdiagram.cs" />
+    <Compile Include="ДобИзмФурнитуры.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ДобИзмФурнитуры.Designer.cs">
+      <DependentUpon>ДобИзмФурнитуры.cs</DependentUpon>
+    </Compile>
     <Compile Include="Заказ.cs" />
     <Compile Include="ЗаказанныеИзделия.cs" />
     <Compile Include="Изделие.cs" />
     <Compile Include="Пользователь.cs" />
     <Compile Include="СкладТкани.cs" />
     <Compile Include="СкладФурнитуры.cs" />
+    <Compile Include="СписокФурнитуры.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="СписокФурнитуры.Designer.cs">
+      <DependentUpon>СписокФурнитуры.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ткань.cs" />
     <Compile Include="Фурнитура.cs" />
     <Compile Include="ФурнитураИзделия.cs" />
-    <EmbeddedResource Include="AddChangeListFurnitura.resx">
-      <DependentUpon>AddChangeListFurnitura.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AddChangeListTkaney.resx">
       <DependentUpon>AddChangeListTkaney.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,9 +155,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Klient.resx">
       <DependentUpon>Klient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListFurnitura.resx">
-      <DependentUpon>ListFurnitura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListИзделий.resx">
       <DependentUpon>ListИзделий.cs</DependentUpon>
@@ -184,6 +179,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Storekeeper.resx">
       <DependentUpon>Storekeeper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ДобИзмФурнитуры.resx">
+      <DependentUpon>ДобИзмФурнитуры.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="СписокФурнитуры.resx">
+      <DependentUpon>СписокФурнитуры.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Изделие.datasource" />

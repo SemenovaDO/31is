@@ -10,51 +10,27 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class ListFurnitura : Form
+    public partial class СписокФурнитуры : Form
     {
         Model1 db = new Model1();
-        public ListFurnitura()
+
+        public СписокФурнитуры()
         {
             InitializeComponent();
+        }
+
+        private void СписокФурнитуры_Load(object sender, EventArgs e)
+        {
+            фурнитураBindingSource.DataSource = db.Фурнитура.ToList();
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             if (Form1.fa == 3)
             {
-                Storekeeper.stor.Show();
-                Close();
-            }
-        }
-
-        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (Form1.fa == 3)
-            {
-                dataGridView1.AllowUserToAddRows = true;
-                dataGridView1.AllowUserToDeleteRows = true;
-                dataGridView1.ReadOnly = false;
-            }
-            else
-            {
-                dataGridView1.AllowUserToAddRows = false;
-                dataGridView1.AllowUserToDeleteRows = false;
-                dataGridView1.ReadOnly = true;
-            }
-        }
-
-        private void ListFurnitura_Load(object sender, EventArgs e)
-        {
-            фурнитураBindingSource.DataSource = db.Фурнитура.ToList();
-        }
-
-        private void Button2_Click(object sender, EventArgs e)//add
-        {
-            if (Form1.fa == 3)
-            {
-                AddChangeListFurnitura addfur = new AddChangeListFurnitura();
+                ДобИзмФурнитуры addfur = new ДобИзмФурнитуры();
                 addfur.db = db;
-                addfur.fur = null; 
+                addfur.fur = null;
                 DialogResult dr = addfur.ShowDialog();
                 try
                 {
@@ -74,11 +50,11 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void Button3_Click(object sender, EventArgs e)//change
+        private void Button2_Click(object sender, EventArgs e)
         {
             if (Form1.fa == 3)
             {
-                AddChangeListFurnitura addfur = new AddChangeListFurnitura();
+                ДобИзмФурнитуры addfur = new ДобИзмФурнитуры();
                 addfur.db = db;
                 addfur.fur = (Фурнитура)фурнитураBindingSource.Current;
                 DialogResult dr = addfur.ShowDialog();
@@ -93,7 +69,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void Button4_Click(object sender, EventArgs e)//delete
+        private void Button3_Click(object sender, EventArgs e)
         {
             if (Form1.fa == 3)
             {
@@ -119,6 +95,31 @@ namespace WindowsFormsApp1
             else
             {
                 MessageBox.Show("Вам не разрешено удалять фурнитуру");
+            }
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            if (Form1.fa == 3)
+            {
+                Storekeeper.stor.Show();
+                Close();
+            }
+        }
+
+        private void ФурнитураDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (Form1.fa == 3)
+            {
+                фурнитураDataGridView.AllowUserToAddRows = true;
+                фурнитураDataGridView.AllowUserToDeleteRows = true;
+                фурнитураDataGridView.ReadOnly = false;
+            }
+            else
+            {
+                фурнитураDataGridView.AllowUserToAddRows = false;
+                фурнитураDataGridView.AllowUserToDeleteRows = false;
+                фурнитураDataGridView.ReadOnly = true;
             }
         }
     }
