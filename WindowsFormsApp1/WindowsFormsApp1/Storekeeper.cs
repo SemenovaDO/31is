@@ -51,7 +51,10 @@ namespace WindowsFormsApp1
 
         private void Button5_Click(object sender, EventArgs e)
         {
-
+            ИнвентаризацияСкладаФурнитуры inventory = new ИнвентаризацияСкладаФурнитуры();
+            Form1.fa = 3;
+            inventory.Show();
+            Hide();
         }
     }
 }
