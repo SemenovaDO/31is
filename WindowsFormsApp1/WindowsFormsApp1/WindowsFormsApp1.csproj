@@ -135,6 +135,12 @@
     <Compile Include="Заказ.cs" />
     <Compile Include="ЗаказанныеИзделия.cs" />
     <Compile Include="Изделие.cs" />
+    <Compile Include="ИнвентаризацияСкладТкани.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ИнвентаризацияСкладТкани.Designer.cs">
+      <DependentUpon>ИнвентаризацияСкладТкани.cs</DependentUpon>
+    </Compile>
     <Compile Include="Пользователь.cs" />
     <Compile Include="СкладТкани.cs" />
     <Compile Include="СкладФурнитуры.cs" />
@@ -192,11 +198,15 @@
     <EmbeddedResource Include="ДобИзмФурнитуры.resx">
       <DependentUpon>ДобИзмФурнитуры.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ИнвентаризацияСкладТкани.resx">
+      <DependentUpon>ИнвентаризацияСкладТкани.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="СписокФурнитуры.resx">
       <DependentUpon>СписокФурнитуры.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Изделие.datasource" />
+    <None Include="Properties\DataSources\СкладТкани.datasource" />
     <None Include="Properties\DataSources\Ткань.datasource" />
     <None Include="Properties\DataSources\Фурнитура.datasource" />
     <None Include="Properties\Settings.settings">

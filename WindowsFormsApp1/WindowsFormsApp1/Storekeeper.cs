@@ -40,5 +40,18 @@ namespace WindowsFormsApp1
             список.Show();
             this.Hide();
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            ИнвентаризацияСкладТкани inventory = new ИнвентаризацияСкладТкани();
+            Form1.fa = 3;
+            inventory.Show();
+            this.Hide();
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
