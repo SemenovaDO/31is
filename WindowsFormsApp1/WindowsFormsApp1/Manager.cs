@@ -32,5 +32,13 @@ namespace WindowsFormsApp1
             list.Show();
             this.Hide();
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            СписокЗаказов listOrder = new СписокЗаказов();
+            Form1.fa = 2;
+            listOrder.Show();
+            this.Hide();
+        }
     }
 }
