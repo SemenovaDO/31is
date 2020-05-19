@@ -29,5 +29,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void Klient_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
