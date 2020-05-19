@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form //форма Авторизация
     {
-        public static int fa = 0;
+        public static int fa = 0;//переменная для того, чтобы система определяла, на какую форму возвращаться
         public static Form1 FORMA { get; set; }
         public static Пользователь USER { get; set; }
         Model1 db = new Model1();
@@ -26,19 +26,19 @@ namespace WindowsFormsApp1
 
         }
 
-        private void Button2_Click(object sender, EventArgs e)//sign up - зарегистрироваться
+        private void Button2_Click(object sender, EventArgs e)//Кнопка sign up - зарегистрироваться
         {
             SingUp sup = new SingUp();
             FORMA = this;
-            this.Hide();
-            sup.Show();
-            textBox1.Text = "";
-            textBox2.Text = "";
+            this.Hide();//скрывание формы Авторизация
+            sup.Show();//переход на форму Регистрация
+            textBox1.Text = "";//очищение данных
+            textBox2.Text = "";//очищение данных
         }
 
-        private void Button1_Click(object sender, EventArgs e)//sign in - войти
+        private void Button1_Click(object sender, EventArgs e)//Кнопка sign in - войти
         {
-            if (textBox1.Text == "" || textBox2.Text == "")
+            if (textBox1.Text == "" || textBox2.Text == "")//если поля Логин и Пароль пусты
             {
                 MessageBox.Show("Нужно задать логин и пароль!");
                 return;
@@ -49,28 +49,28 @@ namespace WindowsFormsApp1
             {
                 USER = usr;
                 FORMA = this;
-                if (usr.Роль == "Директор")
+                if (usr.Роль == "Директор")//если роль Директор
                 {
                     Director dir = new Director();
-                    dir.Show();
+                    dir.Show();//переходим на форму Директора
                     this.Hide();
                 }
-                else if (usr.Роль == "Менеджер")
+                else if (usr.Роль == "Менеджер")//если роль Менеджер
                 {
                     Manager mgr = new Manager();
-                    mgr.Show();
+                    mgr.Show();//переходим на форму Менеджер
                     this.Hide();
                 }
-                else if (usr.Роль == "Кладовщик")
+                else if (usr.Роль == "Кладовщик")//если роль Кладовщик
                 {
                     Storekeeper str = new Storekeeper();
-                    str.Show();
+                    str.Show();//переходим на форму Кладовщик
                     this.Hide();
                 }
-                else if (usr.Роль == "Заказчик")
+                else if (usr.Роль == "Заказчик")//если роль Заказчик
                 {
                     Klient kli = new Klient();
-                    kli.Show();
+                    kli.Show();//переходим на форму Заказчик
                     this.Hide();
                 }
                 else // если такой роли нет
@@ -78,22 +78,22 @@ namespace WindowsFormsApp1
                     MessageBox.Show($"Роли {usr.Роль} в системе нет!");
                     return;
                 }
-                textBox1.Text = "";
-                textBox2.Text = "";
+                textBox1.Text = "";//очищение данных
+                textBox2.Text = "";//очищение данных
             }
             else
             {
                 // если данные введены не правильно, то показываем сообщение
                 MessageBox.Show("Пользователя с таким логином и паролем нет!");
-                textBox1.Text = "";
-                textBox2.Text = "";
+                textBox1.Text = "";//очищение данных
+                textBox2.Text = "";//очищение данных
                 return;
             }
         }
 
-        private void Button3_Click(object sender, EventArgs e)//exit
+        private void Button3_Click(object sender, EventArgs e)//Кнопка exit
         {
-            Application.Exit();
+            Application.Exit();//Выход из разрабатываемой ИС
         }
     }
 }
