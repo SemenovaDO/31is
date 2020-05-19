@@ -32,5 +32,12 @@ namespace WindowsFormsApp1
             list.Show();
             this.Hide();
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Internet info = new Internet();
+            info.Show();
+            this.Hide();
+        }
     }
 }
