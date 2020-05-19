@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class SingUp : Form
+    public partial class SingUp : Form//форма Регистрация
     {
-        Model1 db = new Model1();
+        Model1 db = new Model1();//добавление модели
         public SingUp()
         {
             InitializeComponent();
@@ -23,34 +23,35 @@ namespace WindowsFormsApp1
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)//sign up
+        private void Button1_Click(object sender, EventArgs e)//Кнопка sign up - зарегистрироваться
         {
             if (textBox1.Text == "" || textBox2.Text == "" ||
-             textBox3.Text == "" || textBox4.Text == "")
+             textBox3.Text == "" || textBox4.Text == "")//если все поля ввода пустые
             {
                 MessageBox.Show("Нужно задать все данные!");
                 return;
             }
-            else if (textBox2.Text != textBox3.Text)
+            else if (textBox2.Text != textBox3.Text)//если поле Пароль не совпадает с полем Пароль2
             {
                 MessageBox.Show("Значения паролей не совпадают!");
-                textBox2.Text = "";
-                textBox3.Text = "";
-                return;
+                textBox2.Text = ""; //очищение данных
+                textBox3.Text = "";//очищение данных
+                return;//возврат
             }
             else if ((textBox4.Text != "Директор") && (textBox4.Text != "Менеджер")
-            && (textBox4.Text != "Заказчик") && (textBox4.Text != "Кладовщик"))
+            && (textBox4.Text != "Заказчик") && (textBox4.Text != "Кладовщик"))/*если роль не Директор, не Менеджер,
+                не Заказчик, не Кладовщик*/
             {
                 MessageBox.Show("Задана неверная роль!");
-                textBox4.Text = "";
-                return;
+                textBox4.Text = "";//очищение данных
+                return;//возврат
             }
             // ищем запись пользователя с введенным логином
             Пользователь usr = db.Пользователь.Find(textBox1.Text);
             if (usr != null)
             {
                 MessageBox.Show("Пользователь с таким логином уже есть!");
-                textBox1.Text = "";
+                textBox1.Text = "";//очищение данных
                 return;
             }
             else
@@ -64,7 +65,7 @@ namespace WindowsFormsApp1
                 db.Пользователь.Add(usr);
                 try
                 {
-                    db.SaveChanges();
+                    db.SaveChanges();//сохранение
                 }
                 catch (Exception ex)
                 {
@@ -74,10 +75,10 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Пользователь " + usr.Логин + " зарегистрирован!");
                 Form1.FORMA.Show();
                 this.Close();
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox3.Text = "";
-                textBox4.Text = "";
+                textBox1.Text = "";//очищение данных
+                textBox2.Text = "";//очищение данных
+                textBox3.Text = "";//очищение данных
+                textBox4.Text = "";//очищение данных
                 return;
             }
         }
